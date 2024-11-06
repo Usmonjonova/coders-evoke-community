@@ -52,7 +52,7 @@
 				centerPadding: '50px',
 				cssEase: 'ease',
 				customPaging: function (slider, i) {
-					return $('<button type="button" data-role="none" role="button" tabindex="0" />').text(i + 1);
+					return $('<button type="button" role="button" tabindex="0" />').text(i + 1);
 				},
 				dots: false,
 				dotsClass: 'slick-dots',
@@ -1295,8 +1295,9 @@
 		if (_.$dots !== null) {
 			_.$dots.attr('role', 'tablist').find('li').each(function (i) {
 				$(this).attr({
-					'role': 'presentation',
+					'role': 'tab',
 					'aria-selected': 'false',
+					'aria-hidden': 'false',
 					'aria-controls': 'navigation' + _.instanceUid + i + '',
 					'id': 'slick-slide' + _.instanceUid + i + ''
 				});
