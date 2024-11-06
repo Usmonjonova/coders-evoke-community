@@ -21,7 +21,7 @@ body.lb-disable-scrolling {
 }
 
 .color-4d4d4d {
-  color: #444444;
+  color: #444444 !important;
 }
 
 .lightbox {
