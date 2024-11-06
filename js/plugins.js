@@ -6317,9 +6317,10 @@
 		if (!settings.dotsData) {
 			this._templates = [$('<button>')
 				.addClass(settings.dotClass)
-				.append($('<span>'))
+				.append('Dot')  // Span o'rniga matn qo'shish
 				.prop('outerHTML')];
 		}
+
 
 		this._controls.$absolute = (settings.dotsContainer ? $(settings.dotsContainer)
 			: $('<div>').addClass(settings.dotsClass).appendTo(this.$element)).addClass('disabled');
