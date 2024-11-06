@@ -6269,7 +6269,7 @@
 			'<span aria-label="' + 'next' + '">&#x203a;</span>'
 		],
 		navSpeed: false,
-		navElement: 'button role="presentation"',
+		navElement: 'button role="button"',
 		navContainer: false,
 		navContainerClass: 'owl-nav',
 		navClass: [
